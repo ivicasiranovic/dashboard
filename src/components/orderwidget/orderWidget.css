@@ -1,0 +1,46 @@
+.orderContainer {
+  flex: 2;
+  padding: 20px;
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+}
+.orderTitle {
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 20px;
+}
+.orderTable {
+  width: 100%;
+  border-spacing: 20px;
+}
+.orderUser {
+  display: flex;
+  align-items: center;
+}
+.ordeTH {
+  text-align: left;
+}
+.orderImg {
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid red;
+  object-fit: center;
+  margin-right: 10px;
+}
+.orderButton {
+  padding: 5px 7px;
+  border: none;
+  border-radius: 5px;
+}
+.orderButton.Approved {
+  background-color: #e5faf2;
+  color: #3bb077;
+}
+.orderButton.Pending {
+  background-color: #ffff6a;
+  color: hsl(60, 88%, 32%);
+}
+.orderButton.Cancel {
+  background-color: hsl(355, 84%, 88%);
+  color: #d95087;
+}

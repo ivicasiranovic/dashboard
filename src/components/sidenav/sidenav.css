@@ -1,0 +1,42 @@
+.sideNavContainer {
+  flex: 1;
+  height: calc(100vh - 50px);
+  position: sticky;
+  background-color: aliceblue;
+  top: 50px;
+}
+
+.sideNavWrapper {
+  padding: 20px;
+  color: #555;
+}
+.sidenavMenu {
+  margin-bottom: 10px;
+}
+.sideNavTitle {
+  font-size: 13px;
+  color: rgb(187, 186, 186);
+}
+.sideNavList {
+  list-style: none;
+  padding: 5px;
+}
+.sidenavListItem {
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.sidenavListItem.active,
+.sidenavListItem:hover {
+  background-color: rgb(240, 240, 255);
+  color: black;
+}
+
+.sideNavIcon {
+  margin-right: 5px;
+  font-size: 20px;
+  color: dodgerblue;
+}
