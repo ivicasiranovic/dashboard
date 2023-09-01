@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import SideNav from "./components/sidenav/SideNav";
 import TopNav from "./components/topnav/TopNav";
@@ -6,11 +6,11 @@ import Home from "./pages/home/Home";
 import UserList from "./pages/userlist/UsersList";
 import UserProfile from "./pages/userprofile/UserProfile";
 import CreateUser from "./pages/createuser/CreateUser";
-import ProductList from "./pages/productlist/ProductList";
+import ProductList from "./pages/productlist/ProductLists";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <TopNav />
       <div className="container">
         <SideNav />
@@ -22,7 +22,7 @@ function App() {
           <Route path="/productlist" element={<ProductList />}></Route>
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
